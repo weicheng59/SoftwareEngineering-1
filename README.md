@@ -1,4 +1,18 @@
 # SoftwareEngineering
 This is a repository for software engineering course in 2017 fall.
 
-11
+
+Project Name: Propal
+
+Team : Team 3 
+
+Technical Stack: LAMP (Linux + Apache + MySql + Php)
+
+Host: Digital Ocean 
+
+Please visit: http://192.34.56.254/project
+
+Main purpose : provide a more user friendly too for project management for a small team 
+
+
+
