@@ -8,6 +8,9 @@
 <?php if(Config::get('rtl')): ?>
 <link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>style_rtl.css?v=1.4.3" media="all" />
 <?php endif; ?>
+<<<<<<< HEAD
+<?php if(isset($_GET['pda'])): ?>
+=======
 <?php 
 
 
@@ -23,6 +26,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 //if(isset($_GET['pda']))
 
 : ?>
+>>>>>>> 51bc1d2faf61486cad9a1277d0c38b98374cc238
 <meta name="viewport" id="viewport" content="width=device-width" />
 <link rel="stylesheet" type="text/css" href="<?php mttinfo('template_url'); ?>pda.css?v=1.4.3" media="all" />
 <?php else: ?>
@@ -39,6 +43,12 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>mytinytodo_lang.php?v=1.4.3"></script>
 <script type="text/javascript" src="<?php mttinfo('mtt_url'); ?>mytinytodo_ajax_storage.js?v=1.4.3"></script>
 
+<<<<<<< HEAD
+<script type="text/javascript">
+$().ready(function(){
+
+	<?php if(isset($_GET['pda'])): ?>
+=======
 
 
 
@@ -57,6 +67,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 
 
     : ?>
+>>>>>>> 51bc1d2faf61486cad9a1277d0c38b98374cc238
 
 	$('body').width(screen.width);
 	$(window).resize(function() {
@@ -82,11 +93,14 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 });
 </script>
 
+<<<<<<< HEAD
+=======
 
 
 
 
 
+>>>>>>> 51bc1d2faf61486cad9a1277d0c38b98374cc238
 <div id="wrapper">
 <div id="container">
 <div id="mtt_body">
@@ -100,6 +114,13 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
  <div id="msg"><span class="msg-text"></span><div class="msg-details"></div></div>
  <div class="bar-menu">
   
+<<<<<<< HEAD
+ <span class="menu-owner" style="display:none">
+ <!--
+   <a href="#settings" id="settings"><?php _e('a_settings');?></a>
+-->
+ </span>
+=======
  <!-- 
  <span class="menu-owner" style="display:none">
  
@@ -107,12 +128,18 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 
  </span>
 -->
+>>>>>>> 51bc1d2faf61486cad9a1277d0c38b98374cc238
 
  <span class="bar-delim" style="display:none"> | </span>
  <span id="bar_auth">
   <span id="bar_public" style="display:none"><?php _e('public_tasks');?> |</span>
+<<<<<<< HEAD
+  <a href="#login" id="bar_login" class="nodecor"><u><?php _e('a_login');?></u> <span class="arrdown"></span></a>
+  <a href="#logout" id="bar_logout"><?php _e('a_logout');?></a>
+=======
   <a href="#login" id="bar_login" class="nodecor"><u><?php _e('login');?></u> <span class="arrdown"></span></a>
   <a href="#logout" id="bar_logout"><?php _e('logout');?></a>
+>>>>>>> 51bc1d2faf61486cad9a1277d0c38b98374cc238
  </span>
  </div>
 </div>
@@ -263,7 +290,11 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <form id="login_form">
  <div class="h"><?php _e('password');?></div>
  <div><input type="password" name="password" id="password" /></div>
+<<<<<<< HEAD
+ <div><input type="submit" value="<?php _e('btn_login');?>" /></div>
+=======
  <div><input type="submit" value="<?php _e('login');?>" /></div>
+>>>>>>> 51bc1d2faf61486cad9a1277d0c38b98374cc238
 </form>
 </div>
 
