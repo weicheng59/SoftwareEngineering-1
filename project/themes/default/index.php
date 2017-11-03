@@ -123,32 +123,22 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <div id="page_tasks" style="display:none">
 
 <div id="lists">
- <!--<ul class="mtt-tabs"></ul>-->
- <!--
- <div class="mtt-tabs-add-button" title="<?php _e('list_new'); ?>"><span></span>
--->
- </div>
- <!--
- <div id="tabs_buttons">
-  <div class="mtt-tabs-select-button mtt-tabs-button" title="<?php _e('list_select'); ?>"><span></span></div>
- </div>
--->
+ <ul class="mtt-tabs"></ul>
+
+ <div class="mtt-tabs-add-button" title="<?php _e('list_new'); ?>"><span></span></div>
 
  <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden">
 
   <a href="#alltasks"><span><?php _e('alltasks'); ?></span>
-
   <div class="list-action"></div>
--->
-
-</a></div>
+  </a></div>
 </div>
 
 
 
 <div id="toolbar" class="mtt-htabs">
 
-  <!--
+
 
 <div id="htab_search">
  <table class="mtt-searchbox"><tr><td>
@@ -159,7 +149,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
   </div> 
  </td></tr></table>
 </div>
--->
+
 
 <div id="htab_newtask">
  <table class="mtt-taskbox"><tr><td class="mtt-tb-cell">
@@ -174,10 +164,8 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
   </div>
  </td>
  <td>
-  <!--
   <a href="#" id="newtask_adv" class="mtt-img-button" title="<?php _e('advanced_add');?>"><span></span></a>
-  -->
-</td>
+ </td>
  </tr></table>
 </div>
  
@@ -187,20 +175,16 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 
 </div>
 
-<!--
+
 <h3>
  
 
-<span id="taskview" class="mtt-menu-button"><span class="btnstr"><?php _e('tasks');?></span> (<span id="total">0</span>) <span class="arrdown"></span></span>
-
-<!--<span id="taskview" class="mtt-menu-button"><span class="btnstr"><?php _e('tasks');?></span> (<span id="total">0</span>) <span class="arrdown"></span></span> -->
-<!--
+<span id="taskview"><span class="btnstr"><?php _e('tasks');?></span> (<span id="total">0</span>)</span>
 
 <span class="mtt-notes-showhide"><?php _e('notes');?> <a href="#" id="mtt-notes-show"><?php _e('notes_show');?></a> / <a href="#" id="mtt-notes-hide"><?php _e('notes_hide');?></a></span>
 <span id="mtt_filters"></span>
 <span id="tagcloudbtn" class="mtt-menu-button"><?php _e('tagcloud');?> <span class="arrdown2"></span></span>
 </h3>
--->
 
 <div id="taskcontainer">
  <ol id="tasklist" class="sortable"></ol>
@@ -240,8 +224,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <div class="form-row-short-end"></div>
 <div class="form-row"><div class="h"><?php _e('task');?></div> <input type="text" name="task" value="" class="in500" maxlength="250" /></div>
 <div class="form-row"><div class="h"><?php _e('note');?></div> <textarea name="note" class="in500"></textarea></div>
-<div class="form-row" style="visibility: hidden;">
-  <div class="h"><?php _e('tags');?></div>
+<div class="form-row"><div class="h"><?php _e('tags');?></div>
  <table cellspacing="0" cellpadding="0" width="100%"><tr>
   <td><input type="text" name="tags" id="edittags" value="" class="in500" maxlength="250" /></td>
   <td class="alltags-cell">
@@ -259,14 +242,6 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 </div>  <!-- end of page_taskedit -->
 
 
-<div id="authform" style="display:none">
-<form id="login_form">
- <div class="h"><?php _e('password');?></div>
- <div><input type="password" name="password" id="password" /></div>
- <div><input type="submit" value="<?php _e('login');?>" /></div>
-</form>
-</div>
-
 <div id="priopopup" style="display:none">
  <span class="prio-neg prio-neg-1">undecide</span>
  <span class="prio-zero">1</span>
@@ -274,14 +249,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
  <span class="prio-pos prio-pos-2">3</span>
 </div>
 
-<div id="taskviewcontainer" class="mtt-menu-container" style="display:none">
-<ul>
- <li id="view_tasks"><?php _e('tasks');?> (<span id="cnt_total">0</span>)</li>
- <li id="view_past"><?php _e('f_past');?> (<span id="cnt_past">0</span>)</li>
- <li id="view_today"><?php _e('f_today');?> (<span id="cnt_today">0</span>)</li>
- <li id="view_soon"><?php _e('f_soon');?> (<span id="cnt_soon">0</span>)</li>
-</ul>
-</div>
+
 
 <div id="tagcloud" style="display:none">
  <a id="tagcloudcancel" class="mtt-img-button"><span></span></a>
@@ -295,44 +263,21 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
  <li class="mtt-need-list mtt-need-real-list" id="btnRenameList"><?php _e('list_rename');?></li>
  <li class="mtt-need-list mtt-need-real-list" id="btnDeleteList"><?php _e('list_delete');?></li>
  <li class="mtt-need-list mtt-need-real-list" id="btnClearCompleted"><?php _e('list_clearcompleted');?></li>
- <li class="mtt-need-list mtt-need-real-list mtt-menu-indicator" submenu="listexportmenucontainer"><div class="submenu-icon"></div><?php _e('list_export'); ?></li>
- <li class="mtt-menu-delimiter mtt-need-real-list"></li>
- <li class="mtt-need-list mtt-need-real-list" id="btnPublish"><div class="menu-icon"></div><?php _e('list_publish');?></li>
- <li class="mtt-need-list mtt-need-real-list" id="btnRssFeed"><div class="menu-icon"></div><?php _e('list_rssfeed');?></li>
  <li class="mtt-menu-delimiter mtt-need-real-list"></li>
  <li class="mtt-need-list mtt-need-real-list sort-item" id="sortByHand"><div class="menu-icon"></div><?php _e('sortByHand');?> <span class="mtt-sort-direction"></span></li>
  <li class="mtt-need-list sort-item" id="sortByDateCreated"><div class="menu-icon"></div><?php _e('sortByDateCreated');?> <span class="mtt-sort-direction"></span></li>
  <li class="mtt-need-list sort-item" id="sortByPrio"><div class="menu-icon"></div><?php _e('sortByPriority');?> <span class="mtt-sort-direction"></span></li>
- <li class="mtt-need-list sort-item" id="sortByDueDate"><div class="menu-icon"></div><?php _e('sortByDueDate');?> <span class="mtt-sort-direction"></span></li>
  <li class="mtt-need-list sort-item" id="sortByDateModified"><div class="menu-icon"></div><?php _e('sortByDateModified');?> <span class="mtt-sort-direction"></span></li>
  <li class="mtt-menu-delimiter"></li>
  <li class="mtt-need-list" id="btnShowCompleted"><div class="menu-icon"></div><?php _e('list_showcompleted');?></li>
 </ul>
 </div>
 
-<div id="listexportmenucontainer" class="mtt-menu-container" style="display:none">
-<ul>
-  <li class="mtt-need-list mtt-need-real-list" id="btnExportCSV"><?php _e('list_export_csv');?></li>
-  <li class="mtt-need-list mtt-need-real-list" id="btnExportICAL"><?php _e('list_export_ical');?></li>
-</ul>
-</div>
-
 <div id="taskcontextcontainer" class="mtt-menu-container" style="display:none">
 <ul>
- <li id="cmenu_edit"><b><?php _e('action_edit');?></b></li>
  <li id="cmenu_note"><?php _e('action_note');?></li>
- <li id="cmenu_prio" class="mtt-menu-indicator" submenu="cmenupriocontainer"><div class="submenu-icon"></div><?php _e('action_priority');?></li>
  <li id="cmenu_move" class="mtt-menu-indicator" submenu="cmenulistscontainer"><div class="submenu-icon"></div><?php _e('action_move');?></li>
  <li id="cmenu_delete"><?php _e('action_delete');?></li>
-</ul>
-</div>
-
-<div id="cmenupriocontainer" class="mtt-menu-container" style="display:none">
-<ul>
- <li id="cmenu_prio:2"><div class="menu-icon"></div>3</li>
- <li id="cmenu_prio:1"><div class="menu-icon"></div>2</li>
- <li id="cmenu_prio:0"><div class="menu-icon"></div>1</li>
- <li id="cmenu_prio:-1"><div class="menu-icon"></div>0</li>
 </ul>
 </div>
 
