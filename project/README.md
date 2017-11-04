@@ -19,6 +19,4 @@ Implement Leader: Yuhao Wu & Dawei Li
 
 Project Leader: Dawei Li
 
-Team Leader: Dawei LI
-
-Scrum Roles:
+Team Leader: Dawei Li
