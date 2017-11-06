@@ -127,7 +127,7 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 
  <div class="mtt-tabs-add-button" title="<?php _e('list_new'); ?>"><span></span></div>
 
- <div id="list_all" class="mtt-tab mtt-tabs-alltasks mtt-tabs-hidden">
+ <div id="list_all" class="mtt-tab mtt-tabs-alltasks">
 
   <a href="#alltasks"><span><?php _e('alltasks'); ?></span>
   <div class="list-action"></div>
