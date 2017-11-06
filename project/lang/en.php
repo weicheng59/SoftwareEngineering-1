@@ -27,7 +27,7 @@ class Lang extends DefaultLang
 		'btn_search' => "Search",
 		'advanced_add' => "Advanced",
 		'searching' => "Searching for",
-		'tasks' => "Tasks",
+		'tasks' => "Story",
 		'taskdate_inline_created' => "created at %s",
 		'taskdate_inline_completed' => "Completed at %s",
 		'taskdate_created' => "Created",
