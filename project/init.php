@@ -1,10 +1,4 @@
 <?php
-/*
-	This file is part of myTinyTodo.
-	(C) Copyright 2009-2010 Max Pozdeev <maxpozdeev@gmail.com>
-	Licensed under the GNU GPL v2 license. See file COPYRIGHT for details.
-*/
-
 if(!defined('MTTPATH')) define('MTTPATH', dirname(__FILE__) .'/');
 
 require_once(MTTPATH. 'common.php');
